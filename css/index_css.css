@@ -1,0 +1,46 @@
+body {
+    background: rgb(3,22,52);
+    margin: 0;
+    padding: 0;
+}
+
+#main_page {
+    position: absolute;
+    height: 700px;
+    width: 70%;
+    left: 50%;
+    margin-left: -35%;
+    top: 3%;
+    padding: 0;
+}
+
+#author_photo {
+    border-radius: 50%;
+    height: 35%; 
+    width: 35%;
+    padding: 30px 0 10px 0;
+}
+
+#author_info {
+    text-align: center;
+    background: rgb(92, 167, 186);
+    margin: 0;
+    padding: 0;
+    height: 600px;
+}
+
+#contact_info {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 19px;
+    color: rgb(3,22,52);
+    background: rgb(175, 215, 237);
+    margin: 0;
+    padding: 10px 0 10px 0;
+    height: 100px;
+}
+
+#link_table {
+    margin: 0;
+    padding: 30px 15px 30px 15px;
+}
