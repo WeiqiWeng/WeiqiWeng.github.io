@@ -37,7 +37,7 @@
 </div>
 
 <!-- navigation section -->
-<section class="navbar navbar-fixed-top custom-navbar" role="navigation">
+<section id="top" class="navbar navbar-fixed-top custom-navbar" role="navigation">
     <div class="container-fullwidth">
         <div class="navbar-header">
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -49,11 +49,10 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#education" class="smoothScroll">Education</a></li>
-                <li><a href="#workexp" class="smoothScroll">Work Experience</a></li>
-                <li><a href="#project" class="smoothScroll">Project</a></li>
-                <li><a href="#work" class="smoothScroll">Web Development</a></li>
-                <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                <li><a href="#education" id="nav-to-edu">Education</a></li>
+                <li><a href="#workexp" id="nav-to-workexp">Work Experience</a></li>
+                <li><a href="#project" id="nav-to-project">Project</a></li>
+                <li><a href="#work" id="nav-to-work">Web Development</a></li>
             </ul>
         </div>
     </div>
@@ -66,18 +65,16 @@
             <div class="col-md-12 col-sm-12">
                 <img id="author_photo" width="200" height="200" src="images/Qphoto.jpg"/>
                 <h2>Weiqi Weng</h2>
-                <h3>MACHINE LEARNING / DATA SCIENCE / DEEP LEARNING / FULL STACK WEB DEVELOPMENT</h3>
+                <h3>MACHINE LEARNING / DATA SCIENCE / DEEP LEARNING / DATA VISUALIZATION / FULL STACK WEB DEVELOPMENT</h3>
                 <hr>
                 <h3>LEARN MORE</h3>
-                <a href="#education" class="smoothScroll btn btn-default">Education</a>
-                <a href="#workexp" class="smoothScroll btn btn-default">Work Experience</a>
-                <a href="#project" class="smoothScroll btn btn-default">Project</a>
-                <a href="#work" class="smoothScroll btn btn-default">Web Development</a>
                 <a href="./files/WeiqiWengResume2017.pdf" target="_blank" class="smoothScroll btn btn-default">Resume</a>
             </div>
         </div>
     </div>
 </section>
+
+<a href="#top" id="back-to-top" class="back-to-top"><i class="fa fa-chevron-up back-to-top-icon" aria-hidden="true"></i></a>
 
 <!-- education section -->
 <section id="education" name="education" class="work">
@@ -264,32 +261,32 @@
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6 edu-block">
-                <img src="images/tool.jpg" width="580" height="320">                
+                <img class="center" src="images/tool.jpg" width="580" height="320">                
             </div>
 
         </div>
 
         <div class="row edu-block">
             <div class="col-lg-3 col-md-3 col-sm-3 padding-top-45px">
-                <img src="images/wayfair_logo.png" width="200" height="47"> 
+                <img class="center" src="images/wayfair_logo.png" width="200" height="47"> 
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
-                <img src="images/facebook.png" width="180" height="135"> 
+                <img class="center" src="images/facebook.png" width="180" height="135"> 
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
-                <img src="images/airflow.png" width="135" height="135">
+                <img class="center" src="images/airflow.png" width="135" height="135">
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
-                <img src="images/jenkins.jpg" width="202.5" height="135"> 
+                <img class="center" src="images/jenkins.jpg" width="202.5" height="135"> 
             </div>
         </div>
         <hr>
-        <div class="row padding-top-45px">
+        <div class="row padding-top-45px edu-block project-title">
+            <img src="images/ccis_logo1.jpg" width="61" height="61"> 
+            <img src="images/ccis_logo.png" width="400" height="61"> 
+        </div>
+        <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 edu-block">
-                <img src="images/ccis_logo1.jpg" width="260" height="260"> 
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 edu-block">
-                <img src="images/ccis_logo.png" width="400" height="61"> 
                 <h4>Master Teaching Assistant, <a href="https://course.ccs.neu.edu/cs6220f17/" target="_blank">Data Mining Techniques/Unsupervised Machine Learning</a></h4>
                 <p>Sep 2017 - Dec 2017</p>
                 <p>My work as MTA:</p>
@@ -305,6 +302,12 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 edu-block">
+                <img class="center" src="images/network.jpg" width="200" height="200"> 
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 edu-block">
+                <img class="center" src="images/plot_cluster_comparison_1.png" width="320" height="200"> 
+            </div>
         </div>
         
     </div>
@@ -316,13 +319,11 @@
 <section id="project" name="project" class="work">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-sm-12">
                 <div class="section-title">
                     <strong>02</strong>
                     <h1 class="heading bold">Project</h1>
                     <hr>
                 </div>
-            </div>
         </div>
 
         <div class="row edu-block">
@@ -335,8 +336,7 @@
             </p>
 
         </div>
-        <div class="row edu-block">
-            <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="edu-block">
                 <p>
                     To predict whether a patient has diabetes mellitus based
                     on a variety of diagnostic measurements is a heated topic
@@ -350,12 +350,13 @@
                     Network after dimension reduction and do further prediction
                     to evaluate model performance.
                 </p>
+        </div>
+        <div class="row edu-block">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img class="center" src="./images/nn_autoencoder.jpg">
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-                <img src="./images/nn_autoencoder.jpg" width="270" height="305">
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-                <img src="./images/nn.jpg" width="200" height="305">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img class="center" src="./images/nn.jpg" height="593" width="350">
             </div>
         </div>
 
@@ -381,11 +382,10 @@
 
         </div>
 
-        <div class="row edu-block">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <img src="./images/bubblechart1.png" width="540" height="315">
+        <div class="edu-block">
+            <div class="edu-block">
+                <img class="center" src="./images/bubblechart1.png">
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
                 <p>
                     In this project, we aim to build a tree-based model to predict whether a diabetic patient will be
                     readmitted within 30 days given the patient’s background and diagnostic information. First we do
@@ -397,7 +397,7 @@
                     model on testing set, compute confusion matrix and plot out statistics including sensitivity,
                     specificity, F1 score and precision to evaluate the final model.
                 </p>
-            </div>
+            
         </div>
 
         <div class="row edu-block">
@@ -420,9 +420,8 @@
 
         </div>
 
-        <div class="row edu-block">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <p>
+        <div class="edu-block">
+                <p class="edu-block">
                     <a href="https://www.everbridge.com/product/mass-notification/" target="_blank">
                         Everbridge Mass Notification Service</a>
                     does critical communication during emergency. Employers may
@@ -434,10 +433,8 @@
                     and better support the service through a regression point of view.
                 </p>
 
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <iframe width="540" height="315" src="https://www.youtube.com/embed/f8Bo3wCq5OI" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <iframe width="540" height="360" class="center" src="https://www.youtube.com/embed/f8Bo3wCq5OI" frameborder="0" allowfullscreen></iframe>
+            
         </div>
 
         <div class="row edu-block">
@@ -461,11 +458,10 @@
 
         </div>
 
-        <div class="row edu-block">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <img src="./images/lr_plot.png" width="540" height="315">
+        <div class="edu-block">
+            <div class="edu-block">
+                <img class="center" src="./images/lr_plot.png">
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
                 <p>
                     Viticulture Commission of the Vinho Verde Region collected physicochemical data of wine,
                     including Fixed Acidity, Volatile Acidity, Citric Acid, Residual Sugar, Chlorides, Free
@@ -476,7 +472,6 @@
                     Quality and discuss the effect of each explanatory variable. 0.05 is set as the significance
                     level.
                 </p>
-            </div>
         </div>
 
         <div class="row edu-block">
@@ -499,8 +494,7 @@
             </p>
         </div>
 
-        <div class="row edu-block">
-            <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="edu-block">
                 <p>
                     In this project, a Cellular Automaton Model (CAM) is established to simulate the pass
                     congestion and vehicle running mechanism based on the live traffic data gathered from Shenzhen
@@ -511,10 +505,8 @@
                     with control variate method and compared in terms of relative significance. Finally we propose a
                     revised version of Average Travelling Time Index to measure the traffic of each round of simulation.
                 </p>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <img src="./images/ca.png" width="560" height="315">
+            <div class="edu-block">
+                <img class="center" src="./images/ca.png" width="560" height="315">
             </div>
         </div>
 
