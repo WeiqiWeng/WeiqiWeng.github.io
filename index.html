@@ -38,7 +38,7 @@
 
 <!-- navigation section -->
 <section class="navbar navbar-fixed-top custom-navbar" role="navigation">
-    <div class="container">
+    <div class="container-fullwidth">
         <div class="navbar-header">
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon icon-bar"></span>
@@ -50,6 +50,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#education" class="smoothScroll">Education</a></li>
+                <li><a href="#workexp" class="smoothScroll">Work Experience</a></li>
                 <li><a href="#project" class="smoothScroll">Project</a></li>
                 <li><a href="#work" class="smoothScroll">Web Development</a></li>
                 <li><a href="#contact" class="smoothScroll">Contact</a></li>
@@ -65,10 +66,11 @@
             <div class="col-md-12 col-sm-12">
                 <img id="author_photo" width="200" height="200" src="images/Qphoto.jpg"/>
                 <h2>Weiqi Weng</h2>
-                <h3>MACHINE LEARNING / DATA SCIENCE / DATA VISUALIZATION / MEAN STACK WEB DEVELOPMENT</h3>
+                <h3>MACHINE LEARNING / DATA SCIENCE / DEEP LEARNING / FULL STACK WEB DEVELOPMENT</h3>
                 <hr>
                 <h3>LEARN MORE</h3>
                 <a href="#education" class="smoothScroll btn btn-default">Education</a>
+                <a href="#workexp" class="smoothScroll btn btn-default">Work Experience</a>
                 <a href="#project" class="smoothScroll btn btn-default">Project</a>
                 <a href="#work" class="smoothScroll btn btn-default">Web Development</a>
                 <a href="./files/WeiqiWengResume2017.pdf" target="_blank" class="smoothScroll btn btn-default">Resume</a>
@@ -78,7 +80,7 @@
 </section>
 
 <!-- education section -->
-<section id="education" class="work">
+<section id="education" name="education" class="work">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12">
@@ -130,6 +132,11 @@
                 <li>
                     <a href="http://www.ccs.neu.edu/home/eelhami/courses_nu_cs6140.htm" target="_blank">
                         Machine Learning
+                    </a>
+                </li>
+                <li>
+                    <a href="./files/syllabus-cs5600.pdf" target="_blank">
+                        Computer Systems
                     </a>
                 </li>
             </ul>
@@ -220,7 +227,7 @@
 </section>
 
 <!-- work experience section -->
-<section id="workexp" class="work">
+<section id="workexp" name="workexp" class="work">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12">
@@ -234,35 +241,79 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 edu-block">
-                <img src="images/wayfair_logo.png" width="200" height="47">
-                <h4>Data Scientist Coop, Boston, MA</h4>
-                <p>Jan 2017 - present</p>
+                <h4>Data Scientist Coop at Wayfair, Boston, MA</h4>
+                <p>Jan 2017 - July 2017</p>
                 <p>My work at Wayfair:</p>
                 <ul>
                     <li>
-                        Established an Airflow dag to fetch Wayfair Display Retargeting daily cost and bid on Facebook 
+                        Established an <a href="https://airflow.apache.org/" target="_blank">Airflow</a> dag to fetch Wayfair Display Retargeting daily cost and bid on Facebook
                     </li>
                     <li>
                         Developed a python MVC Desktop App to query data from Vertica, compute KPI and tune new bid 
                     </li>
                     <li>
-                        set up a Jenkins pipeline and automated the bidding process for retargeting team by calling <a href="https://developers.facebook.com/docs/marketing-apis" target="_blank">Facebook Marketing API</a>
+                        Set up a <a href="https://jenkins.io/" target="_blank">Jenkins</a> pipeline and automated the bidding process for retargeting team by calling <a href="https://developers.facebook.com/docs/marketing-apis" target="_blank">Facebook Marketing API</a>
+                    </li>
+                    <li>
+                        Built an Elasticity-based Optimization Model to recommend new bids on different customer segments
+                    </li>
+                    <li>
+                        Ran online tests on 12 DPA tags and lowered ACNR to 17% on average
                     </li>
                 </ul>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6 edu-block">
-                <img src="images/tool.jpg" width="540" height="315">                
+                <img src="images/tool.jpg" width="580" height="320">                
             </div>
 
         </div>
+
+        <div class="row edu-block">
+            <div class="col-lg-3 col-md-3 col-sm-3 padding-top-45px">
+                <img src="images/wayfair_logo.png" width="200" height="47"> 
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="images/facebook.png" width="180" height="135"> 
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="images/airflow.png" width="135" height="135">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="images/jenkins.jpg" width="202.5" height="135"> 
+            </div>
+        </div>
+        <hr>
+        <div class="row padding-top-45px">
+            <div class="col-lg-6 col-md-6 col-sm-6 edu-block">
+                <img src="images/ccis_logo1.jpg" width="260" height="260"> 
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 edu-block">
+                <img src="images/ccis_logo.png" width="400" height="61"> 
+                <h4>Master Teaching Assistant, <a href="https://course.ccs.neu.edu/cs6220f17/" target="_blank">Data Mining Techniques/Unsupervised Machine Learning</a></h4>
+                <p>Sep 2017 - Dec 2017</p>
+                <p>My work as MTA:</p>
+                <ul>
+                    <li>
+                        Provide interesting questions, write solutions and rubics for assignments
+                    </li>
+                    <li>
+                        Grade assignments and get feedbacks to course projects
+                    </li>
+                    <li>
+                        Hold TA session to resolve student's doubts about assignments/concepts/lectures
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
 </section>
 
 
 
 <!-- project section -->
-<section id="project" class="work">
+<section id="project" name="project" class="work">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12">
@@ -480,7 +531,7 @@
 </section>
 
 <!-- web development section -->
-<section id="work" class="work">
+<section id="work" name="work" class="work">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12">
@@ -500,10 +551,17 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
                 <i class="fa fa-book medium-icon"></i>
-                <h3>BOOKSHELF</h3>
+                <a href="https://youtu.be/VW6DNko3hds" target="_blank"><h3>BOOKSHELF</h3></a>
                 <hr>
                 <p>BookShelf is a platform for us to share every piece of reading experience through through
-                    recommendations, book reviews, reading groups and Q&As. You may try username bob and password bob.
+                    recommendations, book reviews, reading groups and Q&As.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+                <i class="fa fa-area-chart medium-icon"></i>
+                <a href="http://app.cardinal.coach/#/" target="_blank"><h3>CARDINAL PLATFORM</h3></a>
+                <hr>
+                <p><a href="https://www.cardinaladvising.com/">Cardinal Advising</a> Sports Analytics Platform is a platform for sports analytics enthusiasts, team managers and physical trainers to better support their decision making.
                 </p>
             </div>
         </div>
